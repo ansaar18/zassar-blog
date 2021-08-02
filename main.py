@@ -119,7 +119,7 @@ class Comment(db.Model):
 
 
 # Required once to create database
-# db.create_all()
+db.create_all()
 
 
 @app.route('/')
