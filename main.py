@@ -118,8 +118,8 @@ class Comment(db.Model):
     parent_blog = relationship("BlogPost", back_populates="comments")
 
 
-# # Required once to create database
-# db.create_all()
+# Required once to create database
+db.create_all()
 
 
 @app.route('/')
